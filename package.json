@@ -8,14 +8,14 @@
     "start": "cross-env NODE_ENV=development node ./backend/server.mjs",
     "builds": [
     {
-      "src": "backend/server.mjs",
+      "src": "./backend/server.mjs",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "backend/server.mjs"
+      "dest": "./backend/server.mjs"
     }
     ]
   },
