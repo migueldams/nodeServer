@@ -4,7 +4,6 @@ import { userdata } from './db/mockUser.mjs';
 import serveFavicon from 'serve-favicon';
 import { findall } from './routes/findall.mjs';
 import { Sequelize, DataTypes } from 'sequelize';
-import morgan from 'morgan';
 import bodyParser from 'body-parser';
 import modelsComment from './models/Comment.mjs';
 import modelsPost from './models/Post.mjs';
@@ -41,7 +40,6 @@ sequelize.authenticate()
   .catch(error => console.error("impossible de se connectée a la bases de donnee " + error));
 
 router.use(bodyParser.json())
-router.use(morgan('dev'))
 
 const Comment = modelsComment(sequelize, DataTypes)
 export const User = modelsUser(sequelize, DataTypes)
