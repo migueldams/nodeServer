@@ -1,5 +1,9 @@
 import express, { urlencoded } from 'express';
 import router from './src/sequelize.mjs'; // avec extension .mjs
+import dotenv from 'dotenv';
+
+
+dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000

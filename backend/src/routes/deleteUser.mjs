@@ -1,7 +1,7 @@
 import express from 'express'
 import { User } from '../sequelize.mjs'
 
-export const deleteUser = (router) => {
+export default (router) => {
     router.delete('/api/delete/:id', (req, res) => {
         try {
             User.findByPk(req.params.id).then(user => {
