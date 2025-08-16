@@ -15,7 +15,7 @@ import bcrypt, { hash } from 'bcrypt'
 import { finBypk } from './routes/finBypk.mjs';
 import { createUser } from './routes/createUser.mjs';
 import { updateUsers } from './routes/updateUsers.mjs';
-import  deleteUser  from './routes/DeleteUser.mjs';
+import {deleteUser} from './routes/DeleteUser.mjs'
 import { login } from './routes/login.mjs';
 
 

@@ -16,20 +16,6 @@ app.get('/',(req,res)=>{
   res.json("Hello, serveur en production")
 })
 
-app.listen(port, () => {
-  console.log('Server running on port '+ port);
-});
-
-
-
-
-
-
-
-
-
-
-
 
 // import { createServer } from 'node:http';
 // const server = createServer((req, res) => {
