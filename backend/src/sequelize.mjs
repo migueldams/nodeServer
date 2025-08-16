@@ -87,7 +87,7 @@ findall(router)
 finBypk(router)
 createUser(router)
 updateUsers(router)
-deleteUser(router)
+// deleteUser(router)
 login(router)
 
 router.use(({ res }) => {
