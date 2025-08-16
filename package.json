@@ -1,0 +1,32 @@
+{
+  "name": "projet-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "cross-env NODE_ENV=development nodemon ./backend/server.mjs",
+    "start": "cross-env NODE_ENV=production node ./backend/server.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "body": "^5.1.0",
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mariadb": "^3.4.5",
+    "mysql": "^2.18.1",
+    "nodemon": "^3.1.10",
+    "parser": "^0.1.4",
+    "sequelize": "^6.37.7",
+    "serve-favicon": "^2.5.1",
+    "mysql2": "^3.14.3"
+  },
+  "devDependencies": {
+    "cross-env": "^10.0.0",
+    "morgan": "^1.10.1"
+  }
+}
