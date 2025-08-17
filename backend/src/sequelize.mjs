@@ -22,10 +22,10 @@ const router = express.Router();
 
 const sequelize = new Sequelize(
   'heaven_writing',
-  'root',
+  process.env.DB_USER,
   '',
   {
-    host: 'localhost',
+    host:process.env.DB_HOST || 'localhost',
     dialect: 'mysql',
     dialectOptions: {
       timezone: 'Z'
