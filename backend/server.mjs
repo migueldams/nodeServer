@@ -11,7 +11,7 @@ const port = process.env.PORT || 3000
 app.use(express.json())
 app.use(urlencoded({extended:false}))
 // Ajout du routeur
-app.use('/post', router);
+// app.use('/post', router);
 app.get('/',(req,res)=>{
   res.json("Hello, serveur en production")
 })
